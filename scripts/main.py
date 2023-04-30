@@ -18,6 +18,10 @@ import argparse
 from logger import logger
 import logging
 
+from dotenv import load_dotenv
+# Load environment variables from .env file
+load_dotenv()
+
 cfg = Config()
 
 def check_openai_api_key():
